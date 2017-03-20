@@ -53,5 +53,9 @@ $app->get('/db/', function() use($app) {
 
 $client = new MongoDB\Client("mongodb://hamzamazhar4094:sgk=2000@ds137090.mlab.com:37090/database4094");
 
+$companydb = $client->companydb;
+
+$result1 = $companydb->createCollection("employeeCollection");
+
 
 $app->run();
