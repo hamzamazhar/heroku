@@ -51,12 +51,5 @@ $app->get('/db/', function() use($app) {
   ));
 });
 
-$client = new MongoDB\Client("MONGOHQ_URL");
-
-$companyDB = $client->companydb;
-
-$result1 = $companydb->createCollection('myCollection');
-
-var_dump($result1);
 
 $app->run();
