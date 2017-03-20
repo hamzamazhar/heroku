@@ -51,5 +51,7 @@ $app->get('/db/', function() use($app) {
   ));
 });
 
+$client = new MongoDB\Client("MONGOHQ_URL");
+
 
 $app->run();

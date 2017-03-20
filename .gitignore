@@ -1,2 +1,5 @@
 vendor/
 .env
+web/images
+web/stylesheets
+web/views
